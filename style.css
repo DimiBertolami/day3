@@ -61,11 +61,25 @@
     99%{    color:transparent;  }
     100%{   color: #000;    }
 }
-
-.dot {
+.glasses_right{
+    position: relative;
+    top: 10px;
+    left: 80px;
+    z-index: 2;
+    height: 95px;
+    width: 95px;
+    background-color: salmon;
+    border-radius: 50%;
+    display: inline-block;
+}
+.glasses_left {
+    position: relative;
+    top: 10px;
+    left: 60px;
+    z-index: 2;
     height: 100px;
     width: 100px;
-    background-color: #bbb;
+    background-color: salmon;
     border-radius: 50%;
     display: inline-block;
 }
