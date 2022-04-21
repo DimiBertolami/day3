@@ -16,15 +16,19 @@
 /* Top left text */
 .top-left {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    color: blue;
+    top: 20px;
+    left: 5px;
+    font-size: x-large;
 }
 
 /* Top right text */
 .top-right {
     position: absolute;
-    top: 8px;
-    right: 16px;
+    top: 20px;
+    right: 20px;
+    font-size: small;
+    color: darkblue;
 }
 
 /* Bottom right text */
@@ -40,4 +44,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.blinking{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: small;
+    color: darkblue;
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
 }
