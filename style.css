@@ -7,7 +7,8 @@
     justify-content: center;
 }
 .round {
-    background-color: transparent;
+    background-color: springgreen;
+    opacity:0.6;
     border: 3px solid springgreen;
     height: 190px;
     width: 190px;
@@ -77,11 +78,10 @@
     position: absolute;
     top: 40%;
     left: 65%;
-    animation:blinkingText 1.2s infinite;
     transform: translate(-50%, -50%);
 }
 
-.blinking{
+.blinking_Old{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -89,10 +89,29 @@
     color: darkblue;
     animation:blinkingText 1.2s infinite;
 }
+.blinking{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: small;
+    color: darkblue;
+    animation:blinkingGlasses 1.2s infinite;
+}
 @keyframes blinkingText{
-    0%{     color: #000;    }
-    49%{    color: #000; }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: #000;    }
+    0%{     color: springgreen;    }
+    49%{    color: purple; }
+    60%{    color: cornflowerblue; }
+    99%{    color:springgreen;  }
+    100%{   color: indianred;    }
+}
+@keyframes blinkingGlasses{
+    0%{     color: springgreen;    }
+    49%{    color: purple; }
+    60%{    color: cornflowerblue; }
+    99%{    color:springgreen;  }
+    100%{   color: indianred;    }
+}
+
+.transparent {
+    background-color: rgba(255,255,255,0.5);
 }
