@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .round {
     background-color: springgreen;
@@ -24,14 +25,25 @@
     left: 90%;
     transform: translate(-50%, -50%);
 }
-.line {
+.line1 {
     background: blue;
-    height: 100px;
-    width: 3px;
-    position: absolute;
-    bottom: 85%;
-    left: 85%;
-    transform: rotate(45deg);
+    height: 70px;
+    width: 10px;
+    position: relative;
+    bottom: 10px;
+    left: 5%;
+    background-color: springgreen;
+    transform: rotate(-60deg);
+}
+.line2 {
+    background: blue;
+    height: 70px;
+    width: 10px;
+    position: relative;
+    bottom: 130px;
+    left: 170px;
+    background-color: springgreen;
+    transform: rotate(55deg);
 }
 
 .container {
